@@ -23,12 +23,32 @@ p {
 .board {
   height: 50%;
   width: 100%;
-  display: inline;
+  display: block;
   margin: auto;
   padding: 8%;
 }
 
-.card {
+.stack, .stack1, .stack2 {
+  position: relative;
+  width: 16rem;
+  display: inline-block;
+  float: left;
+}
+.stack {
+  top: -15rem;
+  left: -10rem;
+}
+.stack1 {
+  top: -7rem;
+  left: 27rem;
+}
+
+.stack2 {
+  top: -15rem;
+  left: 42rem;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card10, .card11, .card12, .card13, .card14, .card15 {
   height: 200px;
   width: 150px;
   border: 1px solid black;
@@ -36,7 +56,92 @@ p {
   border-radius: 10px;
   margin: 8%;
   display: inline-block;
+  position: absolute;
 }
+
+.card1 {
+   z-index: auto;
+   top: 8rem;
+   left: 8rem;
+}
+
+.card2 {
+  z-index: 1;
+  top: 9rem;
+  left: 9rem;
+}
+.card3 {
+  z-index: 2;
+  top: 10rem;
+  left: 10rem;
+}
+.card4 {
+  z-index: 3;
+  top: 11rem;
+  left: 11rem;
+}
+.card5 {
+  z-index: 4;
+  top: 12rem;
+  left: 12rem;
+}
+.card6 {
+  z-index: 4;
+  top: 13rem;
+  left: 13rem;
+}
+.card7 {
+  z-index: 4;
+  top: 14rem;
+  left: 14rem;
+}
+
+.card8 {
+   z-index: auto;
+   top: 8rem;
+   left: 8rem;
+}
+
+.card9 {
+  z-index: 1;
+  top: 9rem;
+  left: 9rem;
+}
+.card10 {
+  z-index: 2;
+  top: 10rem;
+  left: 10rem;
+}
+.card11 {
+  z-index: 3;
+  top: 11rem;
+  left: 11rem;
+}
+.card12 {
+  z-index: 4;
+  top: 12rem;
+  left: 12rem;
+}
+.card13 {
+  z-index: 4;
+  top: 13rem;
+  left: 13rem;
+}
+.card14 {
+  z-index: 4;
+  top: 14rem;
+  left: 14rem;
+}
+
+/*.cards {
+  height: 200px;
+  width: 150px;
+  border: 1px solid black;
+  background: rgba(5, 218, 39, 0.31);
+  border-radius: 10px;
+  margin: 8%;
+  display: inline-block;
+}*/
 
 .booton {
   background-color: rgb(19, 102, 133);
@@ -71,4 +176,10 @@ p {
 
 .clicker:hover {
   background-color: rgb(79, 135, 156);
+}
+
+.hidden {
+  background-color: grey;
+  color: grey;
+
 }
