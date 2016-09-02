@@ -37,3 +37,38 @@ p {
   margin: 8%;
   display: inline-block;
 }
+
+.booton {
+  background-color: rgb(19, 102, 133);
+  height: 50px;
+  width: 150px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  font-family: 'Bungee Shade', cursive;
+  border-radius: 50%;
+  position: relative;
+  left: 23rem;
+  bottom: 25rem;
+}
+.booton:hover {
+  background-color: rgb(79, 135, 156);
+}
+
+.clicker {
+  background-color: rgb(19, 102, 133);
+  height: 50px;
+  width: 150px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  font-family: 'Bungee Shade', cursive;
+  border-radius: 50%;
+  position: relative;
+  left: 37rem;
+  bottom: 25rem;
+}
+
+.clicker:hover {
+  background-color: rgb(79, 135, 156);
+}
