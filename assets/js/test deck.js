@@ -14,19 +14,36 @@ class Deck {
     this.cardsInHand = 7;
   }
   dealHand() {
-    while(this.playerOne.length < this.cardsInHand) {
+    for(let i=1; i<=7; i++) {
       let randomNumber = Math.floor(Math.random() * (this.fullDeck.length-0)+0);
       let newCard = this.fullDeck.slice(randomNumber, randomNumber+1);
-      this.playerOne.push(newCard);
+      this.playerOne[i] = newCard;
+      console.log(this.playerOne[i]);
       this.fullDeck.splice(randomNumber,1); //removing the cards dealt so that they do not repeat in deck
     }
+
+    // while(this.playerOne.length < this.cardsInHand) {
+    //   let randomNumber = Math.floor(Math.random() * (this.fullDeck.length-0)+0);
+    //   let newCard = this.fullDeck.slice(randomNumber, randomNumber+1);
+    //   this.playerOne.push(newCard);
+    //   this.fullDeck.splice(randomNumber,1); //removing the cards dealt so that they do not repeat in deck
+    // }
     while(this.playerTwo.length < this.cardsInHand) {
       let randomNumber = Math.floor(Math.random() * (this.fullDeck.length-0)+0);
       let newCard = this.fullDeck.slice(randomNumber, randomNumber+1);
       this.playerTwo.push(newCard);
       this.fullDeck.splice(randomNumber,1);
     }
-  }
+  // }
+  // turnCard() {
+      document.querySelector('.stack').addEventListener('click', function(e){
+      let x  = event.target.classList.toString();
+      let z = parseInt(x.replace('card', ''));
+      console.log(x,z,this.playerOne[z]);
+      event.target.classList.innerHTML = this.playerOne[z];
+})
+
+    }
 }
 
 
