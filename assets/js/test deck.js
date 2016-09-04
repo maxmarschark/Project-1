@@ -29,6 +29,7 @@ class Deck {
   }
 }
 
+
 let x = new Deck();
 x.dealHand();
 console.log(x.playerOne);
