@@ -61,13 +61,19 @@ function hidePlayerTwo() {
   document.querySelector('.player-2-stack .card5').innerHTML = `<h2></h2>`;
   document.querySelector('.player-2-stack .card6').innerHTML = `<h2></h2>`;
 }
+
+ // let c = playerOneCards();
+ // playerOneCards = shareCards;
+ //  if (playerOneCards == playerTwoCards) {
+ //
+ //  }
+
+
+
 // let x = new Deck();
 // x.dealHand();
 // console.log(x.playerOne);
 // console.log(x.playerTwo);
-// let cardsInHand = playerOne
-// let playerOne =
-
 
 
 //sourced from stackoverflow.com//
