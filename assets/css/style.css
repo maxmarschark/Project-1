@@ -32,11 +32,13 @@ p {
   display: inline-block;
   float: left;
   font-size: 25px;
-  font-family: impact bold;
+  font-family: 'impact' , cursive;
+
 }
 .player-1-stack {
   top: -15rem;
   left: -10rem;
+  color: white;
 }
 .deck-stack {
   top: -7rem;
@@ -49,6 +51,7 @@ p {
 .player-2-stack {
   top: -15rem;
   left: 42rem;
+  color: white;
 }
 
 .card0, .card1, .card2, .card3, .card4, .card5, .card6, .card15 {

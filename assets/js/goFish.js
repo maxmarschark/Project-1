@@ -5,7 +5,7 @@ console.log('Go Fish');
 
 window.alert("Player One! It's your turn!");
 
-let deck = ['Ace','Ace','Ace','Ace','2','2','2','2','3','3','3','3','4','4','4','4','5','5','5','5','6','6','6','6'];
+let deck = ['A','A','A','A','2','2','2','2','3','3','3','3','4','4','4','4','5','5','5','5','6','6','6','6'];
 let playerOne = [];
 let playerTwo = [];
 
@@ -24,7 +24,6 @@ for(let i=8; i<=14; i++) {
   playerTwo.push(cardToDeal);
 }
 
-
 document.querySelector('.player-1-stack').addEventListener('click', function(e){
   let x = event.target.classList.toString();
   let z = parseInt(x.replace('card', ''));
@@ -41,6 +40,7 @@ function hidePlayerOne() {
   document.querySelector('.player-1-stack .card4').innerHTML = `<h2></h2>`;
   document.querySelector('.player-1-stack .card5').innerHTML = `<h2></h2>`;
   document.querySelector('.player-1-stack .card6').innerHTML = `<h2></h2>`;
+  window.alert("Player 2! You\'re up!");
 }
 
 document.querySelector('.player-2-stack').addEventListener('click', function(e){
@@ -60,14 +60,18 @@ function hidePlayerTwo() {
   document.querySelector('.player-2-stack .card4').innerHTML = `<h2></h2>`;
   document.querySelector('.player-2-stack .card5').innerHTML = `<h2></h2>`;
   document.querySelector('.player-2-stack .card6').innerHTML = `<h2></h2>`;
+  window.alert("Player 1, You\'re up again!")
 }
 
- // let c = playerOneCards();
- // playerOneCards = shareCards;
- //  if (playerOneCards == playerTwoCards) {
- //
- //  }
+function checkCards() {
+  const x = '.player-1-stack';
+  const y = '.player-2-stack';
+    if(x == y) {
+      return 'share cards';
+    }
+    window.alert('share cards');
 
+}
 
 
 // let x = new Deck();
