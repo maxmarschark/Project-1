@@ -1,18 +1,18 @@
 console.log('practice');
 
-//have a deck of 24 cards
-//distibute 7 random cards tp player 1 and 2
-//how many remaining cards will be in the deck after cards have been dealt;
+// have a deck of 24 cards
+// distibute 7 random cards tp player 1 and 2
+// how many remaining cards will be in the deck after cards have been dealt;
 
 class Deck {
   constructor(){
-    this.fullDeck = ['ace','ace','ace','ace','two','two','two','two','three','three','three','three','four','four','four','four','five','five','five','five','six','six','six','six']; //manually enter cards
+     this.fullDeck = ['Ace','Ace','Ace','Ace','2','2','2','2','3','3','3','3','4','4','4','4','5','5','5','5','6','6','6','6'];
     this.dealDeck = 14;
     this.remainingCards = 10;
     this.playerOne = [];
     this.playerTwo = [];
     this.cardsInHand = 7;
-  }
+    }
   dealHand() {
     for(let i=1; i<=7; i++) {
       let randomNumber = Math.floor(Math.random() * (this.fullDeck.length-0)+0);
@@ -41,9 +41,9 @@ class Deck {
       let z = parseInt(x.replace('card', ''));
       console.log(x,z,this.playerOne[z]);
       event.target.classList.innerHTML = this.playerOne[z];
-})
+    })
 
-    }
+  }
 }
 
 

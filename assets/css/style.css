@@ -11,13 +11,11 @@ h1{
 }
 
 p {
-  font-size: 20px;
+  font-size: 30px;
   font-family: 'Bungee Shade', cursive;
   color: rgb(19, 102, 133);
-  /*position: absolute;
-  top: 10rem;
-  left: 20rem;*/
   text-align: center;
+  position: relative;
 }
 
 .board {
@@ -28,27 +26,32 @@ p {
   padding: 8%;
 }
 
-.stack, .stack1, .stack2 {
+.player-1-stack, .player-2-stack, .deck-stack {
   position: relative;
   width: 16rem;
   display: inline-block;
   float: left;
+  font-size: 25px;
+  font-family: impact bold;
 }
-.stack {
+.player-1-stack {
   top: -15rem;
   left: -10rem;
 }
-.stack1 {
+.deck-stack {
   top: -7rem;
-  left: 27rem;
+  left: 18rem;
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Bungee Shade', cursive;
 }
 
-.stack2 {
+.player-2-stack {
   top: -15rem;
   left: 42rem;
 }
 
-.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card10, .card11, .card12, .card13, .card14, .card15 {
+.card0, .card1, .card2, .card3, .card4, .card5, .card6, .card15 {
   height: 200px;
   width: 150px;
   border: 1px solid black;
@@ -59,123 +62,85 @@ p {
   position: absolute;
 }
 
-.card1 {
+.player-1-stack .card0 {
+   z-index: auto;
+   top: 8rem;
+   left: 8rem;
+   text-align: left;
+}
+
+.player-1-stack .card1 {
+  z-index: 1;
+  top: 9rem;
+  left: 9rem;
+  text-align: left;
+}
+.player-1-stack .card2 {
+  z-index: 2;
+  top: 10rem;
+  left: 10rem;
+  text-align: left;
+}
+.player-1-stack .card3 {
+  z-index: 3;
+  top: 11rem;
+  left: 11rem;
+  text-align: left;
+}
+.player-1-stack .card4 {
+  z-index: 4;
+  top: 12rem;
+  left: 12rem;
+  text-align: left;
+}
+.player-1-stack .card5 {
+  z-index: 4;
+  top: 13rem;
+  left: 13rem;
+  text-align: left;
+}
+.player-1-stack .card6 {
+  z-index: 4;
+  top: 14rem;
+  left: 14rem;
+  text-align: left;
+}
+
+.player-2-stack .card0 {
    z-index: auto;
    top: 8rem;
    left: 8rem;
 }
 
-.card2 {
+.player-2-stack .card1 {
   z-index: 1;
   top: 9rem;
   left: 9rem;
 }
-.card3 {
+.player-2-stack .card2 {
   z-index: 2;
   top: 10rem;
   left: 10rem;
 }
-.card4 {
+.player-2-stack .card3 {
   z-index: 3;
   top: 11rem;
   left: 11rem;
 }
-.card5 {
+.player-2-stack .card4 {
   z-index: 4;
   top: 12rem;
   left: 12rem;
 }
-.card6 {
+.player-2-stack .card5 {
   z-index: 4;
   top: 13rem;
   left: 13rem;
 }
-.card7 {
+.player-2-stack .card6 {
   z-index: 4;
   top: 14rem;
   left: 14rem;
-}
-
-.card8 {
-   z-index: auto;
-   top: 8rem;
-   left: 8rem;
-}
-
-.card9 {
-  z-index: 1;
-  top: 9rem;
-  left: 9rem;
-}
-.card10 {
-  z-index: 2;
-  top: 10rem;
-  left: 10rem;
-}
-.card11 {
-  z-index: 3;
-  top: 11rem;
-  left: 11rem;
-}
-.card12 {
-  z-index: 4;
-  top: 12rem;
-  left: 12rem;
-}
-.card13 {
-  z-index: 4;
-  top: 13rem;
-  left: 13rem;
-}
-.card14 {
-  z-index: 4;
-  top: 14rem;
-  left: 14rem;
-}
-
-/*.cards {
-  height: 200px;
-  width: 150px;
-  border: 1px solid black;
-  background: rgba(5, 218, 39, 0.31);
-  border-radius: 10px;
-  margin: 8%;
-  display: inline-block;
-}*/
-
-.booton {
-  background-color: rgb(19, 102, 133);
-  height: 50px;
-  width: 150px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  font-family: 'Bungee Shade', cursive;
-  border-radius: 50%;
-  position: relative;
-  left: 23rem;
-  bottom: 25rem;
-}
-.booton:hover {
-  background-color: rgb(79, 135, 156);
-}
-
-.clicker {
-  background-color: rgb(19, 102, 133);
-  height: 50px;
-  width: 150px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  font-family: 'Bungee Shade', cursive;
-  border-radius: 50%;
-  position: relative;
-  left: 37rem;
-  bottom: 25rem;
-}
-
-.clicker:hover {
-  background-color: rgb(79, 135, 156);
 }
 
 .hidden {
