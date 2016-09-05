@@ -1,4 +1,4 @@
-console.log('practice');
+console.log('Go Fish');
 // have a deck of 24 cards
 // distibute 7 random cards tp player 1 and 2
 // how many remaining cards will be in the deck after cards have been dealt;
@@ -65,11 +65,16 @@ function hidePlayerTwo() {
 // x.dealHand();
 // console.log(x.playerOne);
 // console.log(x.playerTwo);
+// let cardsInHand = playerOne
+// let playerOne =
 
+
+
+//sourced from stackoverflow.com//
 function shuffleArray(array) {
-  for (var i = array.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
-    var temp = array[i];
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    let temp = array[i];
     array[i] = array[j];
     array[j] = temp;
   }
