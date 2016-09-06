@@ -3,9 +3,9 @@ console.log('Go Fish');
 // distibute 7 random cards tp player 1 and 2
 // how many remaining cards will be in the deck after cards have been dealt;
 
-window.alert("Player One! It's your turn!");
+window.alert("Player One! It's your turn! Click cards to view them.");
 
-let deck = ['A','A','A','A','2','2','2','2','3','3','3','3','4','4','4','4','5','5','5','5','6','6','6','6'];
+let deck = ['A','A','A','A','2','2','2','2','3','3','3','3','4','4','4','4','5','5','5','5','6','6','6','6','7','7','7','7','8','8','8','8','9','9','9','9','10','10','10','10','J','J','J','J','Q','Q','Q','Q','K','K','K','K'];
 let playerOne = [];
 let playerTwo = [];
 
@@ -40,7 +40,7 @@ function hidePlayerOne() {
   document.querySelector('.player-1-stack .card4').innerHTML = `<h2></h2>`;
   document.querySelector('.player-1-stack .card5').innerHTML = `<h2></h2>`;
   document.querySelector('.player-1-stack .card6').innerHTML = `<h2></h2>`;
-  window.alert("Player 2! You\'re up!");
+  window.alert("Player 2! You\'re up! Click cards to view them.");
 }
 
 document.querySelector('.player-2-stack').addEventListener('click', function(e){
@@ -63,15 +63,15 @@ function hidePlayerTwo() {
   window.alert("Player 1, You\'re up again!")
 }
 
-function checkCards() {
-  const x = '.player-1-stack';
-  const y = '.player-2-stack';
-    if(x == y) {
-      return 'share cards';
-    }
-    window.alert('share cards');
-
-}
+// function checkCards() {
+//   let x = '.player-1-stack';
+//   let y = '.player-2-stack';
+//     if(x == y) {
+//       return 'share cards';
+//     }
+//     window.alert('share cards');
+//
+// }
 
 
 // let x = new Deck();
