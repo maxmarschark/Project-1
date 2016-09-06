@@ -63,15 +63,6 @@ function hidePlayerTwo() {
   window.alert("Player 1, You\'re up again!")
 }
 
-// function checkCards() {
-//   let x = '.player-1-stack';
-//   let y = '.player-2-stack';
-//     if(x == y) {
-//       return 'share cards';
-//     }
-//     window.alert('share cards');
-//
-// }
 
 
 // let x = new Deck();
